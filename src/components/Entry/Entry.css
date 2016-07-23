@@ -1,0 +1,18 @@
+.entry__more-info--hidden {
+	max-height: 0;
+    transition: max-height 0.33s ease-in;
+    overflow: hidden;
+}
+
+.entry__more-info--shown {
+	max-height: 500px;
+}
+
+
+
+.entry {
+	display: block;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	cursor: pointer;
+}
