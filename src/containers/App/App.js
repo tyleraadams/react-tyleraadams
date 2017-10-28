@@ -1,32 +1,32 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Router } from "react-router";
-import { BrowserRouter, Link, Route } from 'react-router-dom';
-
-
-// import logo from './logo.svg';
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import Index from "../Index/Index";
+import data from "../../data/portfolio.json";
 import "./App.css";
+import slugify from "../../utils/slugify";
 
 class App extends Component {
-  static propTypes = {
-    routes: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired
-  };
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <p>Hello, World!</p>
-          <p>My name is</p> <h1>Tyler A. Adams</h1>
-          <p>,and I make stuff on the interwebs</p>
+          <p>My name is</p>
+          <h1>Tyler A. Adams</h1>
+          <p>and I make stuff on the interwebs</p>
+          <p>See more of my work</p>
         </div>
         <p className="App-intro" />
-        {this.content()}
+        <BrowserRouter>
+          <div>
+            <Route exact path="/" component={Index} />
+            {data.entries.map(datum => (
+              <Route path={`/${slugify(datum.hed)}`} component={Index} />
+            ))}
+          </div>
+        </BrowserRouter>
       </div>
     );
-  }
-  content() {
-    return <BrowserRouter routes={this.props.routes} history={this.props.history} />;
   }
 }
 

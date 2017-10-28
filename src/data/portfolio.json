@@ -1,7 +1,17 @@
 {
   "entries": [
     {
-      "hed": "GreatestInnovation.org",
+      "hed": "Whoa Sweeper",
+      "dek": "Mine Game",
+      "href": "http://tyleraadams.com/whoa-sweeper/",
+      "git": "https://github.com/tyleraadams/whoa-sweeper",
+      "body":
+        "I went to an interview once where they asked me to build my own Minesweeper. I had 3 hours in the afternoon to myself to build it. I panicked and the end result wasn't very good. Needless to say I didn't get the job... but, I vowed to myself to build it in my own time, and to do it right. This is the result. ",
+      "sidebar":
+        "Technologies: React, Redux"
+    },
+    {
+      "hed": "Greatest Innovation",
       "dek": "voting app",
       "href": "http://greatestinnovation.org",
       "git": "https://github.com/tyleraadams/american_innovation",

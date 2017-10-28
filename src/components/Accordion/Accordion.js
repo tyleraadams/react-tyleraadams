@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import Entry from "../Entry/Entry";
 
 class Accordion extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      activeKey: false
+      activeKey: props.openTo
     };
   }
 
@@ -21,6 +21,7 @@ class Accordion extends Component {
   render() {
     return (
       <div className="portfolio">
+        <h2>My work</h2>
         {this.props.entries.map((entry, index) => {
           let isOpen = false;
           if (index === this.state.activeKey) {
