@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-import Entry from "../Entry/Entry";
+import Entry from '../Entry/Entry';
 
 class Accordion extends Component {
   constructor(props) {
     super();
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      activeKey: props.openTo
+      activeIndex: props.openTo
     };
   }
 
   handleClick(index) {
     this.setState({
-      activeKey: index === this.state.activeKey ? false : index
+      activeIndex: index === this.state.activeIndex ? false : index
     });
   }
 
@@ -24,7 +24,7 @@ class Accordion extends Component {
         <h2>My work</h2>
         {this.props.entries.map((entry, index) => {
           let isOpen = false;
-          if (index === this.state.activeKey) {
+          if (index === this.state.activeIndex) {
             isOpen = true;
           }
           return (
@@ -51,6 +51,8 @@ Accordion.propTypes = {
       body: PropTypes.string,
       sidebar: PropTypes.string
     })
-  ).isRequired
+  ).isRequired,
+  openTo: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]).isRequired
 };
+
 export default Accordion;

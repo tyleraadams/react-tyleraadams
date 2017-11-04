@@ -1,10 +1,6 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { BrowserRouter, Link, Route } from "react-router-dom";
-import Index from "../Index/Index";
-import data from "../../data/portfolio.json";
-import "./App.css";
-import slugify from "../../utils/slugify";
+import React, { Component } from 'react';
+import './App.css';
+import Router from '../../react_router';
 
 class App extends Component {
   render() {
@@ -17,14 +13,7 @@ class App extends Component {
           <p>See more of my work</p>
         </div>
         <p className="App-intro" />
-        <BrowserRouter>
-          <div>
-            <Route exact path="/" component={Index} />
-            {data.entries.map(datum => (
-              <Route path={`/${slugify(datum.hed)}`} component={Index} />
-            ))}
-          </div>
-        </BrowserRouter>
+        <Router />
       </div>
     );
   }
