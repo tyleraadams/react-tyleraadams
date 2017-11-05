@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Entry from '../Entry/Entry';
+import Entry from '../entry/entry';
 
 class Accordion extends Component {
   constructor(props) {

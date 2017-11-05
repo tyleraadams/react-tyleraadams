@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import get from 'lodash/get';
 import PropTypes from 'prop-types';
 
-import Accordion from '../../components/Accordion/Accordion';
+import Accordion from '../../components/accordion/accordion';
 import portfolio from '../../data/portfolio';
 import { withRouter } from 'react-router';
 import findEntry from '../../utils/find_entry';
 
 class Index extends Component {
   render() {
-    const pathname = get(this.props, 'location.pathname');
-    const foundEntry = findEntry(portfolio.entries, pathname);
-    const entry = pathname !== '/' ? foundEntry : false;
+    const project = get(this.props, 'match.params.project', '/');
+    console.log('?? ', project);
+    const foundEntry = findEntry(portfolio.entries, project);
+    const entry = project !== '/' ? foundEntry : false;
     return <Accordion entries={portfolio.entries} openTo={entry} />;
   }
 }
@@ -22,4 +23,4 @@ Index.propTypes = {
   }).isRequired
 };
 
-export default withRouter(Index);
+export default Index;

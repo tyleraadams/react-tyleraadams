@@ -15,7 +15,7 @@
     "react-dom": "16.0.0",
     "react-router": "4.2.0",
     "react-router-dom": "4.2.2",
-    "react-transition-group": "^2.2.1"
+    "react-transition-group": "git@github.com:reactjs/react-transition-group.git#v1-stable"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -27,6 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "format": "./node_modules/.bin/prettier --single-quote --write \"src/**/*.{js,jsx}\""
   }
 }

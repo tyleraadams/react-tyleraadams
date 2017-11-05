@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
-import './Entry.css';
+import './entry.css';
 import slugify from '../../utils/slugify';
 
 function Entry(props) {
