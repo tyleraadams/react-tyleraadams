@@ -7,15 +7,15 @@
   },
   "dependencies": {
     "classnames": "2.2.5",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.3.0",
-    "lodash": "^4.17.4",
-    "prettier": "^1.7.4",
+    "husky": "0.14.3",
+    "lint-staged": "4.3.0",
+    "lodash": "4.17.4",
+    "prettier": "1.7.4",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-router": "4.2.0",
     "react-router-dom": "4.2.2",
-    "react-transition-group": "git@github.com:reactjs/react-transition-group.git#v1-stable"
+    "react-transition-group": "2.2.1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [

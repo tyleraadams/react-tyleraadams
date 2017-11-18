@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import Entry from '../entry/entry';
 
-class Accordion extends Component {
+class Accordion extends PureComponent {
   constructor(props) {
     super();
     this.handleClick = this.handleClick.bind(this);

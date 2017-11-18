@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './entry.css';
 import slugify from '../../utils/slugify';
 
-function Entry(props) {
+const Entry = props => {
   const isOpened = props.isOpen;
   const entry = props.entry;
   let className = classnames({
@@ -40,7 +40,7 @@ function Entry(props) {
       </a>
     ]
   ];
-}
+};
 
 Entry.proptypes = {
   entry: PropTypes.shape({}).isRequired

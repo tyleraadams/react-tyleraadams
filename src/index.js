@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
-import App from './containers/app/app';
+import Router from './react_router/index';
 
 const mountNode = document.getElementById('root');
 
-ReactDOM.render(<App />, mountNode);
+ReactDOM.render(<Router />, mountNode);
