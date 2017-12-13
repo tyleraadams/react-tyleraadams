@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 const Transition = props => (
   <CSSTransition
     {...props}
-    classNames="fadeTranslate"
+    classNames="Transition"
     timeout={50}
     mountOnEnter={true}
     unmountOnExit={true}

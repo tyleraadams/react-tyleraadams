@@ -5,30 +5,102 @@
       "dek": "Mine Game",
       "href": "http://tyleraadams.com/whoa-sweeper/",
       "git": "https://github.com/tyleraadams/whoa-sweeper",
+      "image":
+        "https://res.cloudinary.com/tyleraadams/image/upload/v1512343277/whoa_sweeper_16_9_u9vh1b.jpg",
+      "date": "Apr 21, 2017",
       "body":
         "I went to an interview once where they asked me to build my own Minesweeper. I had 3 hours in the afternoon to myself to build it. I panicked and the end result wasn't very good. Needless to say I didn't get the job... but, I vowed to myself to build it in my own time, and to do it right. This is the result. ",
-      "sidebar":
-        "Technologies: React, Redux"
+      "tags": "React, Redux, game"
     },
     {
       "hed": "Greatest Innovation",
       "dek": "voting app",
+      "date": "Nov 24, 2015",
       "href": "http://greatestinnovation.org",
+      "image":
+        "https://res.cloudinary.com/tyleraadams/image/upload/v1512395847/greatest_innovation_vj8x9f.jpg",
       "git": "https://github.com/tyleraadams/american_innovation",
       "body":
         "I built the voting terminal for The Takeaway's series on America's Greatest Innovation. Every week, two innovations are eliminated based on the lowest number of votes they have received. Users may also submit their own nominations.",
-      "sidebar":
-        "Technologies: Node, Express, Babel, ES2015, Gulp, Browserify, MongoDB, CommonJS, D3, SVG, CSS animations, Flexbox, NGINX Client: New York Public Radio"
+      "tags":
+        "Node, Express, Babel, ES2015, Gulp, Browserify, MongoDB, CommonJS, D3, SVG, CSS animations, Flexbox, NGINX, freelance"
+    },
+    {
+      "hed": "Verodalla",
+      "dek": "art portfolio app",
+      "image":
+        "https://res.cloudinary.com/tyleraadams/image/upload/v1513128595/verodalla_tydpih.jpg",
+      "href": "http://www.verodalla.com",
+      "date": "June 26, 2016",
+      "git": "https://github.com/verodalla/verodalla.github.io",
+      "body":
+        "I built this art portoflio for VeroDalla, renowned French sculptor based in New York. I used the Meteor framework to bootstrap development and to make the site a single-page app. The simple design leaves the beauty of the artist's work front and center.",
+      "tags": "Responsive Design, jQuery, freelance, slideshow, slick"
     },
     {
       "hed": "Community College Challenge",
-      "dek": "data viz app ",
-      "href": "http://www.greatestinnovation.org",
-      "git": "https://github.com/tyleraadams/american_innovation",
+      "dek": "data viz app",
+      "image":
+        "https://res.cloudinary.com/tyleraadams/image/upload/v1512342891/community_college_challenge_rm41ci.jpg",
+      "href": "http://higheredchallenge.org/",
+      "git": "https://github.com/tyleraadams/mappingcolleges",
+      "date": "Sep 5, 2015",
       "body":
         "The user can see data on a thousand community colleges across the country, how states compare to each other and how an individual college compares to the state average. Built with a vector map library.",
-      "sidebar":
-        "Technologies: Node, Express, Babel, ES2015, Gulp, Browserify, MongoDB, CommonJS, D3, SVG, CSS animations, Flexbox, NGINX Client: New York Public Radio"
+      "tags":
+        "Node, Express, Babel, ES2015, Gulp, Browserify, MongoDB, CommonJS, D3, SVG, CSS animations, Flexbox, NGINX, freelance"
+    },
+    {
+      "hed": "Under Her Skin",
+      "dek": "news diary app ",
+      "image":
+        "https://res.cloudinary.com/tyleraadams/image/upload/v1513126753/living_with_breast_cancer_u2pfyt.jpg",
+      "href": "http://www.livingwithbreastcancer.org/",
+      "git": "https://github.com/thetakeawaydev/under-her-skin",
+      "date": "Oct 12, 2016",
+      "body":
+        "I built the news app for WNYC's The Takeaway's award winning series on minorities living with breast cancer. I use TimelineJS to render the written and audio diaries of the women interviewed for this project.",
+      "tags":
+        "React, React Router, TimelineJS, Responsive Design, HTML5 audio, freelance"
+    },
+    {
+      "hed": "Fast Company Videos",
+      "dek": "Video Landing and Video Pages",
+      "image":
+        "https://res.cloudinary.com/tyleraadams/image/upload/v1513128325/videos_vdibrj.jpg",
+      "href": "https://www.fastcompany.com/videos",
+      "git": null,
+      "date": "Dec 1, 2017",
+      "body":
+        "I built the frontend and contributed to api work for this project. I also built the video permalink pages that are linked on this page. ",
+      "tags":
+        "React, Redux, React Router, Slick, responsive design, JW Player, REST api, GPT, Fast Company"
+    },
+    {
+      "hed": "Fast Company Newsletters",
+      "dek": "Video Landing Page",
+      "image":
+        "https://res.cloudinary.com/tyleraadams/image/upload/v1513128052/newsletters_crr1wx.jpg",
+      "href": "https://www.fastcompany.com/newsletters",
+      "git": null,
+      "date": "Nov 1, 2017",
+      "body":
+        "I managed the tech side of Fast Company's newsletter ecosystem. That includes implementing an automated build system for newsletter templates and liveintent ad units, newsletter modules that subscribe users to our lists throughout the site based on article tags and categories, and the newsletter preferences page, where users can modify which to which newsletters they are subscribed.",
+      "tags":
+        "React, Redux, REST api, PostUp, responsive design, html email, foundation, Fast Company"
+    },
+    {
+      "hed": "Fast Company Responsive Assets",
+      "dek": "The Right Size (and format) For Every Scren",
+      "image":
+        "https://res.cloudinary.com/tyleraadams/image/upload/v1513127368/responsive_images_y8lc5s.jpg",
+      "href": "https://www.fastcompany.com/",
+      "git": null,
+      "date": "Feb 8, 2017",
+      "body":
+        "I created the responsive image system we use at Fast Company. I created a React component that generates html5 picture tags with srcset attributes to load in the properly sized assets based on screen width, image width, and screen resolution. The component also converts gif images into video assets to save a large amount of bandwidth usage and contribute to faster load times for users.",
+      "tags":
+        "React, Cloudinary, html5, images, responsive images, srcset, retina images, lazyloading, gifs, video, Fast Company"
     }
   ]
 }

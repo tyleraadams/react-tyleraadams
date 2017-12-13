@@ -9,7 +9,6 @@ const Layout = ({ children }) => (
         <p>and I make stuff on the interwebs</p>
         <p>See more of my work</p>
       </div>
-      <hr />
       {children}
     </section>
   </div>

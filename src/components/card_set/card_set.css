@@ -1,0 +1,12 @@
+.portfolio__card-set {
+  /*display: grid;*/
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #ededf4;
+  min-height: 50vh;
+  /*grid-template-rows: 25% 100px auto;*/
+  /*align-items: stretch;*/
+}

@@ -13,7 +13,9 @@ const App = props => {
     <Layout>
       <TransitionGroup>
         <Transition key={locationKey}>
-          <section style={{ position: 'fixed' }}>
+          <section
+            style={{ left: 0, right: 0, bottom: 0, top: 0, height: '100%' }}
+          >
             <Switch location={props.location}>
               {props.routes.map((route, index) => (
                 <Route {...route} key={index} />

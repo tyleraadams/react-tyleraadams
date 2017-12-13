@@ -14,12 +14,12 @@
   color: white;
 }
 
-.fadeTranslate-enter {
+.Transition-enter {
   opacity: 0;
   z-index: 1;
 }
 
-.fadeTranslate-enter.fadeTranslate-enter-active {
+.Transition-enter.Transition-enter-active {
   opacity: 1;
   transition: opacity 250ms ease-in;
 }
@@ -28,9 +28,9 @@
   opacity: 1;
   transform: translate(0, 0);
 }*/
-/*
-.fadeTranslate-exit.fadeTranslate-exit-active {
+
+.Transition-exit.Transition-exit-active {
   opacity: 0;
   transform: translate(0, 3vh);
   transition: opacity 1000ms ease-in, transform 1000ms ease-in-out;
-}*/
+}
