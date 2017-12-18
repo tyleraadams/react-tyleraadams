@@ -19,18 +19,14 @@ const Card = props => {
     >
       <article className="card">
         <figure style={{ maxWidth: '100%' }}>
-          <img src={entry.image} style={{ maxWidth: '100%' }} />
+          <img
+            src={`https://res.cloudinary.com/tyleraadams/image/upload/w_300,q_auto,fl_lossy/${entry.image}`}
+            style={{ maxWidth: '100%' }}
+          />
         </figure>
-        <h3>{entry.hed}</h3>
-
-        <small>{entry.dek}</small>
-        <div>
-          <a key={entry.href} href={entry.href} title={entry.hed}>
-            Link To Project
-          </a>
-          <a key={entry.git} href={entry.git} title={entry.hed}>
-            Git
-          </a>
+        <div className="card__text">
+          <small className="card__dek">{entry.dek}</small>
+          <h3 className="card__hed">{entry.hed}</h3>
         </div>
       </article>
     </Link>

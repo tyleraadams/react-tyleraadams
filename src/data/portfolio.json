@@ -5,8 +5,7 @@
       "dek": "Mine Game",
       "href": "http://tyleraadams.com/whoa-sweeper/",
       "git": "https://github.com/tyleraadams/whoa-sweeper",
-      "image":
-        "https://res.cloudinary.com/tyleraadams/image/upload/v1512343277/whoa_sweeper_16_9_u9vh1b.jpg",
+      "image": "whoa_sweeper_16_9_u9vh1b",
       "date": "Apr 21, 2017",
       "body":
         "I went to an interview once where they asked me to build my own Minesweeper. I had 3 hours in the afternoon to myself to build it. I panicked and the end result wasn't very good. Needless to say I didn't get the job... but, I vowed to myself to build it in my own time, and to do it right. This is the result. ",
@@ -17,8 +16,7 @@
       "dek": "voting app",
       "date": "Nov 24, 2015",
       "href": "http://greatestinnovation.org",
-      "image":
-        "https://res.cloudinary.com/tyleraadams/image/upload/v1512395847/greatest_innovation_vj8x9f.jpg",
+      "image": "greatest_innovation_vj8x9f",
       "git": "https://github.com/tyleraadams/american_innovation",
       "body":
         "I built the voting terminal for The Takeaway's series on America's Greatest Innovation. Every week, two innovations are eliminated based on the lowest number of votes they have received. Users may also submit their own nominations.",
@@ -28,8 +26,7 @@
     {
       "hed": "Verodalla",
       "dek": "art portfolio app",
-      "image":
-        "https://res.cloudinary.com/tyleraadams/image/upload/v1513128595/verodalla_tydpih.jpg",
+      "image": "verodalla_tydpih",
       "href": "http://www.verodalla.com",
       "date": "June 26, 2016",
       "git": "https://github.com/verodalla/verodalla.github.io",
@@ -40,8 +37,7 @@
     {
       "hed": "Community College Challenge",
       "dek": "data viz app",
-      "image":
-        "https://res.cloudinary.com/tyleraadams/image/upload/v1512342891/community_college_challenge_rm41ci.jpg",
+      "image": "community_college_challenge_rm41ci",
       "href": "http://higheredchallenge.org/",
       "git": "https://github.com/tyleraadams/mappingcolleges",
       "date": "Sep 5, 2015",
@@ -53,8 +49,7 @@
     {
       "hed": "Under Her Skin",
       "dek": "news diary app ",
-      "image":
-        "https://res.cloudinary.com/tyleraadams/image/upload/v1513126753/living_with_breast_cancer_u2pfyt.jpg",
+      "image": "living_with_breast_cancer_u2pfyt",
       "href": "http://www.livingwithbreastcancer.org/",
       "git": "https://github.com/thetakeawaydev/under-her-skin",
       "date": "Oct 12, 2016",
@@ -66,8 +61,7 @@
     {
       "hed": "Fast Company Videos",
       "dek": "Video Landing and Video Pages",
-      "image":
-        "https://res.cloudinary.com/tyleraadams/image/upload/v1513128325/videos_vdibrj.jpg",
+      "image": "videos_vdibrj",
       "href": "https://www.fastcompany.com/videos",
       "git": null,
       "date": "Dec 1, 2017",
@@ -79,21 +73,19 @@
     {
       "hed": "Fast Company Newsletters",
       "dek": "Video Landing Page",
-      "image":
-        "https://res.cloudinary.com/tyleraadams/image/upload/v1513128052/newsletters_crr1wx.jpg",
+      "image": "newsletters_crr1wx",
       "href": "https://www.fastcompany.com/newsletters",
       "git": null,
       "date": "Nov 1, 2017",
       "body":
         "I managed the tech side of Fast Company's newsletter ecosystem. That includes implementing an automated build system for newsletter templates and liveintent ad units, newsletter modules that subscribe users to our lists throughout the site based on article tags and categories, and the newsletter preferences page, where users can modify which to which newsletters they are subscribed.",
       "tags":
-        "React, Redux, REST api, PostUp, responsive design, html email, foundation, Fast Company"
+        "React, Redux, REST api, PostUp, responsive design, html email, foundation, Fast Company, gulp"
     },
     {
       "hed": "Fast Company Responsive Assets",
       "dek": "The Right Size (and format) For Every Scren",
-      "image":
-        "https://res.cloudinary.com/tyleraadams/image/upload/v1513127368/responsive_images_y8lc5s.jpg",
+      "image": "responsive_images_y8lc5s",
       "href": "https://www.fastcompany.com/",
       "git": null,
       "date": "Feb 8, 2017",

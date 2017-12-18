@@ -1,0 +1,24 @@
+.tag-set {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.tag-set__name {
+  flex: 0 0 100%;
+}
+
+.tag-set__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-set__button {
+  border: 5px solid black;
+  font-size: 3em;
+}
+
+.tag-set__button:hover {
+  background: green;
+  cursor: pointer;
+}

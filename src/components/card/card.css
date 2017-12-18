@@ -1,4 +1,24 @@
 .card {
-  background: #f6f6f6;
+  background: white; /*#f6f6f6;*/
+  height: 100%;
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+  /*padding: 10px;*/
   /*border: 1px solid black;*/
+}
+
+.card img {
+  filter: grayscale(100%);
+}
+
+.card:hover img {
+  filter: none;
+}
+
+.card__hed {
+  font-size: 1.5em;
+}
+
+.card__text {
+  padding: 0 10px 10px;
 }

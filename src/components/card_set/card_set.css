@@ -1,12 +1,46 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /*grid-template-rows: repeat(2, 1fr);*/
+}
+
+.portfolio__name {
+  grid-column: 1 / -1;
+  padding-left: 10px;
+  position: relative;
+  top: -5px;
+  /*grid-row: 1;*/
+}
+
 .portfolio__card-set {
   /*display: grid;*/
+  grid-column: 4 / -1;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  padding-left: 10px;
-  padding-right: 10px;
-  background: #ededf4;
-  min-height: 50vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+  /*background: #ededf4;*/
+  background: black;
+  min-height: 833px;
+  border: 10px solid black;
+  margin-right: 10px;
+  margin-bottom: 10px;
   /*grid-template-rows: 25% 100px auto;*/
   /*align-items: stretch;*/
+
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*width: 100%;*/
+}
+
+.portfolio__menu {
+  grid-column: 1 / 4;
+}
+
+.portfolio__not-found {
+  background: white;
+  grid-column: 1 / -1;
+  padding: 10px;
 }
