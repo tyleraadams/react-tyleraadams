@@ -19,6 +19,11 @@
   font-size: 1.5em;
 }
 
+.card__dek {
+  color: #808080;
+  line-height: 0.5;
+}
+
 .card__text {
   padding: 0 10px 10px;
 }

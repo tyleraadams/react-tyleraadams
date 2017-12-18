@@ -2,7 +2,7 @@
   "entries": [
     {
       "hed": "Whoa Sweeper",
-      "dek": "Mine Game",
+      "dek": "mine game",
       "href": "http://tyleraadams.com/whoa-sweeper/",
       "git": "https://github.com/tyleraadams/whoa-sweeper",
       "image": "whoa_sweeper_16_9_u9vh1b",
@@ -60,7 +60,7 @@
     },
     {
       "hed": "Fast Company Videos",
-      "dek": "Video Landing and Video Pages",
+      "dek": "video landing and permalink pages",
       "image": "videos_vdibrj",
       "href": "https://www.fastcompany.com/videos",
       "git": null,
@@ -72,7 +72,7 @@
     },
     {
       "hed": "Fast Company Newsletters",
-      "dek": "Video Landing Page",
+      "dek": "templates, build system, subscription",
       "image": "newsletters_crr1wx",
       "href": "https://www.fastcompany.com/newsletters",
       "git": null,
@@ -84,7 +84,7 @@
     },
     {
       "hed": "Fast Company Responsive Assets",
-      "dek": "The Right Size (and format) For Every Scren",
+      "dek": "the right size for every screen",
       "image": "responsive_images_y8lc5s",
       "href": "https://www.fastcompany.com/",
       "git": null,

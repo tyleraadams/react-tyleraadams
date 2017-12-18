@@ -75,10 +75,10 @@ class CardSet extends Component {
     return (
       <section className="portfolio">
         <div className="portfolio__menu">
-          <h2 className="portfolio__name">Some of my latest work</h2>
+          <h2 className="portfolio__name">my work</h2>
           <TagSet
             tags={this.tags}
-            name={'Filter By Tag'}
+            name={'filter by tag'}
             onClick={this.handleTagClick}
             removeFilterAction={this.handleRemoveAllFilters}
             selected={this.state.selectedTags}

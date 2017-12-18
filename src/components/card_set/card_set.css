@@ -1,7 +1,6 @@
 .portfolio {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /*grid-template-rows: repeat(2, 1fr);*/
 }
 
 .portfolio__name {
@@ -9,6 +8,7 @@
   padding-left: 10px;
   position: relative;
   top: -5px;
+  font-size: 2em;
   /*grid-row: 1;*/
 }
 
@@ -23,7 +23,7 @@
   /*padding-right: 10px;*/
   /*background: #ededf4;*/
   background: black;
-  min-height: 833px;
+  /*min-height: 1vw;*/
   border: 10px solid black;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -43,4 +43,21 @@
   background: white;
   grid-column: 1 / -1;
   padding: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+  .portfolio__card-set {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .portfolio {
+    display: block;
+  }
+
+  .portfolio__card-set {
+    margin-right: 0;
+  }
 }
