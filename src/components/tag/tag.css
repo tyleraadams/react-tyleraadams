@@ -7,9 +7,9 @@
 }
 
 .tag--selected {
-  background: blue !important;
+  background: #0074d9 !important;
 }
 
 .tag:hover {
-  background: yellow;
+  background: #ffdc00;
 }

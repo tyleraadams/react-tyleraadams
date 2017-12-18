@@ -20,13 +20,14 @@
 }
 
 .tag-set__button--active:hover {
-  background: green;
+  background: #2ecc40; /* green */
   cursor: pointer;
   border-color: black;
 }
 
 .tag-set__button--inactive {
   text-decoration: line-through;
-  border-color: white;
+  border-color: #f9f9f9;
   outline: none;
+  color: #aaaaaa;
 }
