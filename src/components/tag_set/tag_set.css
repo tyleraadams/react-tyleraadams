@@ -14,11 +14,19 @@
 }
 
 .tag-set__button {
-  border: 5px solid black;
+  border: 5px solid;
   font-size: 3em;
+  margin-bottom: 7px;
 }
 
-.tag-set__button:hover {
+.tag-set__button--active:hover {
   background: green;
   cursor: pointer;
+  border-color: black;
+}
+
+.tag-set__button--inactive {
+  text-decoration: line-through;
+  border-color: white;
+  outline: none;
 }
