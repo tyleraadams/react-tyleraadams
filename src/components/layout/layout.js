@@ -1,13 +1,24 @@
 import React from 'react';
 import './layout.css';
+import Github from '../../components/buttons/github';
+
 const Layout = ({ children }) => (
   <div className="layout">
     <section>
       <div className="layout__header">
-        <h1>Tyler Adams</h1>
-        <p>
-          I am a passionate builder of beautiful web experiences and a
-          full-stack developer. Here is what's important to me in my work:
+        <nav>
+          <h1>Tyler Adams</h1>
+          <Github
+            title="Tyler Adams on Github"
+            href="https://www.github.com/tyleraadams"
+            className="layout__github"
+          />
+        </nav>
+        <div className="layout__desc">
+          <p>
+            I am a passionate builder of beautiful web experiences and a
+            full-stack developer. Here is what's important to me in my work:
+          </p>
           <ul>
             <li>
               <em>Maintainability</em>. My primary goal is to write
@@ -28,7 +39,7 @@ const Layout = ({ children }) => (
               and better code and products.
             </li>
           </ul>
-        </p>
+        </div>
       </div>
       {children}
     </section>

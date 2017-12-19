@@ -35,6 +35,10 @@
   /*width: 100%;*/
 }
 
+.portfolio__card-set--featured {
+  display: block;
+}
+
 .portfolio__menu {
   grid-column: 1 / 4;
 }

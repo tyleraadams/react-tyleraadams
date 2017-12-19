@@ -1,8 +1,20 @@
 .layout__header {
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-.layout__header p {
+.layout__header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.layout__header h1 {
+  justify-self: start;
+}
+
+.layout__header p,
+.layout__header ul {
   max-width: 600px;
 }
 
@@ -10,8 +22,52 @@
   margin-top: 7px;
 }
 
+.layout__desc {
+  border-right: 1px solid #111111;
+  max-width: 600px;
+  position: relative;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.layout__desc::before {
+  width: 25vw;
+  content: '';
+  border-top: 1px solid #111111;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.layout__desc::after {
+  width: 25vw;
+  content: '';
+  border-top: 1px solid #111111;
+  position: absolute;
+  right: -25vw;
+  top: 0;
+  /*text-align: center;*/
+  /*padding-top: 20px;*/
+  /*padding-left: 100px;*/
+}
+
+.layout__github {
+  /*  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  top: 50px;*/
+}
+
 @media only screen and (max-width: 650px) {
   .layout__header p {
     max-width: none;
+  }
+  .layout__desc--right {
+    /*border: 0;*/
+    /*position: static;*/
+  }
+
+  .layout__desc {
+    margin-right: 20px;
   }
 }

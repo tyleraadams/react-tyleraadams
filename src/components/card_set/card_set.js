@@ -11,7 +11,10 @@ class CardSet extends Component {
     super();
 
     this.state = {
-      selectedTags: []
+      selectedTags:
+        props.selected !== null
+          ? props.entries[props.selected].tags.split(', ')
+          : []
     };
     const alreadyUsed = {};
     this.tags = props.entries
@@ -29,6 +32,7 @@ class CardSet extends Component {
       .sort();
     this.handleTagClick = this.handleTagClick.bind(this);
     this.handleRemoveAllFilters = this.handleRemoveAllFilters.bind(this);
+    this.determineCardContent = this.determineCardContent.bind(this);
   }
   handleRemoveAllFilters() {
     this.setState({ selectedTags: [] });
@@ -52,6 +56,30 @@ class CardSet extends Component {
     }
   }
 
+  determineCardContent(cardsToDisplay) {
+    if (this.props.selected !== null) {
+      return (
+        <div className="portfolio__card-set portfolio__card-set--featured">
+          <Card entry={this.props.entries[this.props.selected]} type="big" />
+        </div>
+      );
+    }
+
+    return (
+      <div className="portfolio__card-set">
+        {cardsToDisplay.length ? (
+          cardsToDisplay.map((entry, index) => {
+            return <Card entry={entry} key={index} />;
+          })
+        ) : (
+          <div className="portfolio__not-found">
+            no results match your criteria :( :( :(
+          </div>
+        )}
+      </div>
+    );
+  }
+
   render() {
     const cardsToDisplay = this.props.entries
       .filter(entry => {
@@ -72,6 +100,7 @@ class CardSet extends Component {
       .sort((a, b) => {
         return new Date(b.date) - new Date(a.date);
       });
+
     return (
       <section className="portfolio">
         <div className="portfolio__menu">
@@ -84,17 +113,8 @@ class CardSet extends Component {
             selected={this.state.selectedTags}
           />
         </div>
-        <div className="portfolio__card-set">
-          {cardsToDisplay.length ? (
-            cardsToDisplay.map((entry, index) => {
-              return <Card entry={entry} key={index} />;
-            })
-          ) : (
-            <div className="portfolio__not-found">
-              No results match your criteria :( :( :(
-            </div>
-          )}
-        </div>
+
+        {this.determineCardContent(cardsToDisplay)}
       </section>
     );
   }

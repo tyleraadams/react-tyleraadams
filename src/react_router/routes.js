@@ -12,7 +12,7 @@ const routes = [
   },
   {
     path: '/:slug',
-    component: Project
+    component: Index
   },
   // ...portfolio.entries.map(function convertDataToRoute(entry) {
   //   return {

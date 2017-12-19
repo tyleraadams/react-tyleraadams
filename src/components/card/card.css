@@ -1,5 +1,5 @@
 .card {
-  background: white; /*#f6f6f6;*/
+  background: #f9f9f9; /*#f6f6f6;*/
   height: 100%;
   /*padding-left: 10px;*/
   /*padding-right: 10px;*/
@@ -21,9 +21,53 @@
 
 .card__dek {
   color: #aaaaaa;
-  line-height: 0.5;
+  /*line-height: 0.5;*/
 }
 
 .card__text {
   padding: 0 10px 10px;
+}
+
+.card--big {
+  width: 100;
+  /*grid-column: 1 / -1;*/
+  /*grid-row: 1 / -1;*/
+}
+
+.card--big .card__hed {
+  font-size: 2.4em;
+  /*grid-column: 1 / -1;*/
+  /*grid-row: 1 / -1;*/
+}
+
+.card--big .card__dek {
+  font-size: 1em;
+  margin-top: 10px;
+  display: block;
+  /*grid-column: 1 / -1;*/
+  /*grid-row: 1 / -1;*/
+}
+
+.card--big img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card--big figure {
+  position: relative;
+}
+
+.card--big figure::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.card--big img {
+  width: 100%;
+  filter: none;
 }
